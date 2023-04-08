@@ -11,84 +11,83 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <div class="perfil">
-                        <div>
-                            <img src="./images/perfil.jpg" class="arredondar-imagem" alt="Imagem de perfil do usuário" />
-                        </div>
-                        <div class="perfil-nome">
-                            <span>Hi, welcome!</span>
-                            <span>Clara Sekar</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icone-sino">
-                        <i class="fa-regular fa-bell"></i>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+        <div class="container-perfil">
+            <img src="./images/perfil.jpg" class="arredondar-imagem perfil" alt="Imagem de perfil do usuário" />
+            <div class="perfil-nome">
+                <span class="text-welcome">Hi, welcome!</span>
+                <span class="text-name">Clara Sekar</span>
+            </div>
+        </div>
+        <div class="sino">
+            <div class="icone-sino">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+        </div>
     </header>
+
     <main>
         <section>
-            <div>
-                <span>My total balance<span>
-                <span>
-                    <span>$</span>
-                    <span>8,666.60</span>
-                </span>
-            </div>
-            <div>
-                <div>
-                   <div>
-
-                   </div>
-                   <div>
-                       <span>USD</span>
-                       <div>
-
-                       </div>
-                   </div> 
+            <div class="container-finance">
+                <div class="container-statistic">
+                    <div class="total">My total balance</div>
+                    <div class="statistic">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span class="text-statistic">Statistic</span>
+                    </div>
+                </div>
+                <div class="container-money">
+                    <div>
+                        <span class="dollar">$</span>
+                        <span class="quantity">8,666.60</span>
+                    </div>
+                    <div>
+                        <span>USD</span>
+                        <span>▾</span>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <div>
-                <div>
-                    
-                </div>
-                <span>
+            <div class="container-balance">
+                <div class="transfer">
+                    <div class="circle-white">
+                        <div class="arrow arrow-out">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="money">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </div>
                     Transfer
-                </span>
-            </div>
-            <div>
-                <div>
-
                 </div>
-                <span>
+                <div class="barra"></div>
+                <div class="request">
+                    <div class="circle-white">
+                        <div class="arrow arrow-in">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="money">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </div>
                     Request
-                </span>
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                <div></div>
-                <span>Get plan</span>
+        <section class="container-transactions">
+            <div class="container-plan">
+                <div class="img-emoji-money">
+                    <img src="./images/emojy_money.png" alt="Emoji de dinheiro" />
+                </div>
+                <span class="text-plan">Get plan</span>
             </div>
-            <div>
-
-            </div>
-            <div>
-                <span>REcent Transaction</span>
-                <div>
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
+            <div class="transactions">
+                <span class="recent">Recent Transaction</span>
+                <div class="imagem-person persons">
+                    <img src="./images/person/person-1.jpg" alt="Imagem de uma pessoa" />
+                    <img src="./images/person/person-2.jpg" alt="Imagem de uma pessoa" />
+                    <img src="./images/person/person-3.jpg" alt="Imagem de uma pessoa" />
+                    <img src="./images/person/person-4.jpg" alt="Imagem de uma pessoa" />                   
                 </div>
             </div>
         </section>
