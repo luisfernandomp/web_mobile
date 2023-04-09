@@ -14,12 +14,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box !important;
 }
 
 html, body {
     width: 100vw !important;
     height: 100vh !important;
-    box-sizing: border-box;
     font-family: var(--font-family-primary);
     color: var(--font-color-primary);
 }
@@ -30,12 +30,12 @@ body{
 
 header{
     height: 80px;
-    margin-top: 0.3rem;
-    width: calc(100% - 24px);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 12px;
+    margin: 0 0 0 0;
 }
 
 
@@ -45,7 +45,7 @@ main {
 
 section{
     padding: 8px 12px;
-    width: calc(100% - 24px);
+    width: 100%;
 }
 
 .container-perfil{
@@ -158,6 +158,7 @@ section{
     font-size: 1em;
     border: 2px solid white;
     border-radius: 100%;
+    margin-right: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +213,7 @@ section{
 .container-plan{
     background-color: var(--bg-secondary);
     border-radius: 25px;
-    width: 95px;
+    width: 25%;
     height: 110px;
     display: flex;
     align-items: center;
@@ -244,13 +245,12 @@ section{
 .transactions {
     display: flex;
     border-radius: 25px;
-    height: 98px;
-    width: 249px;
+    height: 110px;
+    width: 72%;
     padding: 6px;
     flex-direction: column;
     background-color: var(--bg-orange);
     justify-content: space-around;
-    align-items: space-between;
 }
 
 .recent{
@@ -266,6 +266,7 @@ section{
 .container-transactions{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .imagem-person{
@@ -279,3 +280,299 @@ section{
     object-fit: cover;
     border-radius: 100%;
 }
+
+.img5, .get-plan{
+    display: none;
+}
+
+.section-balance{
+    width: 100%;
+}
+
+
+.container-all-transactions{
+    color: #1e1e1e;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    background-color: #fefefe;
+}
+
+
+.description-transaction, .total-transaciton{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-transactions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all-transactions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.all-transactions div{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all-transactions > img{
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    
+}
+
+
+.logo-transaction{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image1, .logo1, .mac1{
+    border-radius: 100%;
+    width: 55px !important;
+    height: 55px !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.image1{
+    background-image: url('./images/image1.png');
+}
+
+.logo1{
+    background-image: url('./images/logo1.png');
+}
+
+.mac1{
+    background-image: url('./images/mac1.png');
+}
+
+
+@media screen and (min-width:320px)  and (max-width: 479px)
+{ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .text-name {
+        font-size: 1em;
+    }
+
+    .perfil-nome{
+        margin-left: 13px;
+        flex-wrap: nowrap;
+    }
+
+    .container-perfil{
+        width: 57%;
+    }
+
+    .quantity, .dollar{
+        font-size: 2.5em;
+    }
+
+
+    .transfer, .request, .text-statistic{
+        font-size: 0.85em;
+    }
+
+    .text-plan, .recent{
+        font-size: 0.8em;
+    }
+
+    .icone-sino{
+        height: 42px;
+        width: 42px;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 599px)
+{ /* smartphones, Android phones, landscape iPhone */ 
+
+    .container-perfil{
+        justify-content: flex-start
+    }
+
+    .perfil-nome{
+        margin-left: 1.4em;
+    }
+
+    .imagem-person img{
+        height: 52px;
+        width: 52px;
+    }
+
+    .transactions{
+        padding: 0.8rem;
+    }
+}
+
+
+@media (min-width:600px) and (max-width: 800px) 
+{ /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .container-perfil{
+        justify-content: flex-start
+    }
+
+    .perfil-nome{
+        margin-left: 1.4em;
+    }
+
+    .imagem-person img{
+        height: 54px;
+        width: 54px;
+    }
+
+    .transactions{
+        padding: 0.8rem;
+    }
+
+    .img5{
+        display: block;
+    }
+
+    .img-emoji-money{
+        height: 55px;
+        width: 55px;
+    }
+
+    .img-emoji-money img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .statistic{
+        height: 52px;
+        width: 113px;
+    }
+
+    .text-statistic {
+        font-size: 1em;
+    }
+}
+@media (min-width:801px) and (max-width: 1024px) 
+{ /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .container-perfil{
+        justify-content: flex-start
+    }
+
+    .container-perfil img{
+        width: 66px;
+        height: 66px;
+    }
+
+    .text-name{
+        font-size: 1.4em;
+    }
+
+    .text-welcome{
+        font-size: 0.9em;
+    }
+
+    .total{
+        font-size: 1em;
+    }
+    .perfil-nome{
+        margin-left: 1.4em;
+    }
+
+    .imagem-person img{
+        height: 54px;
+        width: 54px;
+    }
+
+    .transactions{
+        padding: 0.8rem;
+    }
+
+    .img5{
+        display: block;
+    }
+
+    .img-emoji-money{
+        height: 55px;
+        width: 55px;
+    }
+
+    .img-emoji-money img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .statistic{
+        height: 56px;
+        width: 123px;
+    }
+
+    .text-statistic {
+        font-size: 1.18em;
+    }
+
+    .circle-white{
+        height: 32px;
+        width: 32px;
+    }
+
+    .money{
+        font-size: 1.15em !important;
+    }
+
+    .text-request, .text-transfer{
+        font-size: 1.2em;
+    }
+
+    .usd{
+        font-size: 1.2em;
+    }
+
+    .get-plan{
+        display: block;
+        flex: 1;
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .section-balance{
+        display: flex;
+    }
+
+    .container-balance{
+        width: 68%;
+        height: 110px;
+    }
+
+    .plan{
+        display: none;
+    }
+    .transactions{
+        width: 100%;
+        height: 128px;
+    }
+
+    .imagem-person{
+        justify-content: center;
+        gap: 60px;
+        margin-top: 10px;
+    }
+
+    .transactions img{
+        border-radius: 20%;
+        height: 70px;
+        width: 70px;
+        
+    }
+
+}
+@media (min-width:1025px) and (max-width: 1280px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

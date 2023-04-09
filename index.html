@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-
     <header>
         <div class="container-perfil">
             <img src="./images/perfil.jpg" class="arredondar-imagem perfil" alt="Imagem de perfil do usuário" />
@@ -40,14 +39,14 @@
                         <span class="dollar">$</span>
                         <span class="quantity">8,666.60</span>
                     </div>
-                    <div>
+                    <div class="usd">
                         <span>USD</span>
                         <span>▾</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="section-balance">
             <div class="container-balance">
                 <div class="transfer">
                     <div class="circle-white">
@@ -58,7 +57,7 @@
                             <i class="fa-solid fa-dollar-sign"></i>
                         </div>
                     </div>
-                    Transfer
+                    <span class="text-transfer">Transfer</span>
                 </div>
                 <div class="barra"></div>
                 <div class="request">
@@ -70,12 +69,19 @@
                             <i class="fa-solid fa-dollar-sign"></i>
                         </div>
                     </div>
-                    Request
+                    <span class="text-request">Request</span>
                 </div>
+            </div>
+
+            <div class="container-plan get-plan">
+                <div class="img-emoji-money">
+                    <img src="./images/emojy_money.png" alt="Emoji de dinheiro" />
+                </div>
+                <span class="text-plan">Get plan</span>
             </div>
         </section>
         <section class="container-transactions">
-            <div class="container-plan">
+            <div class="container-plan plan">
                 <div class="img-emoji-money">
                     <img src="./images/emojy_money.png" alt="Emoji de dinheiro" />
                 </div>
@@ -87,13 +93,68 @@
                     <img src="./images/person/person-1.jpg" alt="Imagem de uma pessoa" />
                     <img src="./images/person/person-2.jpg" alt="Imagem de uma pessoa" />
                     <img src="./images/person/person-3.jpg" alt="Imagem de uma pessoa" />
-                    <img src="./images/person/person-4.jpg" alt="Imagem de uma pessoa" />                   
+                    <img src="./images/person/person-4.jpg" alt="Imagem de uma pessoa" />
+                    <img class="img5" src="./images/person/person-5.jpg" alt="Imagem de uma pessoa" />                   
                 </div>
             </div>
         </section>
+        <div class="container-all-transactions">
+
+            <div class="title-transactions">
+                <div class="text-transaction">Transaction</div>
+                <div class="text-see">See all</div>
+            </div>
+
+            <div class="all-transactions">
+                <div>
+                    <div class="logo-transaction">
+                        <div class="image1"></div>
+                    </div>
+                    <div class="description-transaction">
+                        <div>Abode Subcribe</div>
+                        <div class="transaction-date">20 Jan 2023, 06:00</div> 
+                    </div>
+                    <div class="total-transaciton">
+                        <div class="transaction-value">-$1,200.00</div>
+                        <div class="transaction-status">Completed</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="logo-transaction">
+                        <div class="logo1"></div>
+                    </div>
+                    <div class="description-transaction">
+                        <div>Casback Zalora</div>
+                        <div class="transaction-date">20 Jan 2023, 06:00</div> 
+                    </div>
+                    <div class="total-transaciton">
+                        <div class="transaction-value">+$800.00</div>
+                        <div class="transaction-status">Completed</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="logo-transaction">
+                        <div class="mac1"></div>
+                    </div>
+                    <div class="description-transaction">
+                        <div>MCdonald</div>
+                        <div class="transaction-date">20 Jan 2023, 06:00</div> 
+                    </div>
+                    <div class="total-transaciton">
+                        <div class="transaction-value">-$300.00</div>
+                        <div class="transaction-status">Completed</div>
+                    </div>
+                </div>
+        </div>
     </main>
     <footer>
-
+        <!-- <div class="rodape">
+            <span class="logo1"><img src="images/casa1.png" alt=""></span>
+            <span class="logo2"><img src="images/calendario1.png" alt=""></span>
+            <span class="logo3"><img src="images/pasta1.png" alt=""></span>
+            <span class="logo4"><img src="images/pessoa1.png" alt=""></span>
+         </div> -->   
     </footer>
     
 </body>
