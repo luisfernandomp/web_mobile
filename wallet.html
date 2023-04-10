@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Financy</title>
+</head>
+<body>
+    <script>
+        function irTransactions() {
+            location.href = "transactions.html";
+        }
+
+    </script>
+    <header>
+        <div class="container-perfil">
+            <img src="./images/perfil.jpg" class="arredondar-imagem perfil" alt="Imagem de perfil do usuário" />
+            <div class="perfil-nome">
+                <span class="text-welcome">Hi, welcome!</span>
+                <span class="text-name">Clara Sekar</span>
+            </div>
+        </div>
+        <div class="sino">
+            <div class="icone-sino">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-finance">
+                <div class="container-statistic">
+                    <div class="total">My total balance</div>
+                    <div class="statistic" onclick="irTransactions()">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span class="text-statistic">Statistic</span>
+                    </div>
+                </div>
+                <div class="container-cash" onclick="irTransactions()">
+                    <div>
+                        <span class="dollar">$</span>
+                        <span class="quantity">8,666.60</span>
+                    </div>
+                    <div class="usd">
+                        <span>USD</span>
+                        <span>▾</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-balance">
+            <div class="container-balance">
+                <div class="transfer" onclick="irTransactions()">
+                    <div class="circle-white">
+                        <div class="container-circle">
+                            <div class="arrow arrow-out">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="money">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-transfer">Transfer</span>
+                </div>
+                <div class="barra"></div>
+                <div class="request" onclick="irTransactions()">
+                    <div class="circle-white">
+                        <div class="container-circle">
+                            <div class="arrow arrow-in">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="money">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-request">Request</span>
+                </div>
+            </div>
+
+            <div class="container-plan get-plan" onclick="irTransactions()">
+                <div class="img-emoji-money">
+                    <img src="./images/emojy_money.png" alt="Emoji de dinheiro" />
+                </div>
+                <span class="text-plan">Get plan</span>
+            </div>
+        </section>
+
+        <div class="container-money">
+            <section class="container-transactions">
+                <div class="container-plan plan" onclick="irTransactions()">
+                    <div class="img-emoji-money">
+                        <img src="./images/emojy_money.png" alt="Emoji de dinheiro" />
+                    </div>
+                    <span class="text-plan">Get plan</span>
+                </div>
+                <div class="transactions">
+                    <span class="recent">Recent Transaction</span>
+                    <div class="imagem-person">
+
+                        <img class="persons" src="./images/person/person-1.jpg" alt="Imagem de uma pessoa" />
+                        <img class="persons" src="./images/person/person-2.jpg" alt="Imagem de uma pessoa" />
+                        <img class="persons" src="./images/person/person-3.jpg" alt="Imagem de uma pessoa" />
+                        <img class="persons" src="./images/person/person-4.jpg" alt="Imagem de uma pessoa" />
+                        <img class="persons img5" src="./images/person/person-5.jpg" alt="Imagem de uma pessoa" />
+
+
+                        <div class="container-image-person">
+                            <img src="./images/person/person-1.jpg" alt="Imagem de uma pessoa" />
+                            <div>Lorem ipsum</div>
+                        </div>
+
+                        <div class="container-image-person">
+                            <img src="./images/person/person-2.jpg" alt="Imagem de uma pessoa" />
+                            <div>Lorem ipsum</div>
+                        </div>
+
+                        <div class="container-image-person">
+                            <img src="./images/person/person-3.jpg" alt="Imagem de uma pessoa" />
+                            <div>Lorem ipsum</div>
+                        </div>
+
+                        <div class="container-image-person">
+                            <img src="./images/person/person-4.jpg" alt="Imagem de uma pessoa" />
+                            <div>Lorem ipsum</div>
+                        </div>
+
+                        <div class="container-image-person">
+                            <img src="./images/person/person-5.jpg" alt="Imagem de uma pessoa" />
+                            <div>Lorem ipsum</div>
+                        </div>
+                   
+                    </div>
+                </div>
+            </section>
+            <div class="container-all-transactions">
+    
+                <div class="title-transactions">
+                    <div class="text-transaction">Transaction</div>
+                    <div class="text-see">See all</div>
+                </div>
+    
+                <div class="all-transactions">
+                    <div>
+                        <div class="logo-transaction">
+                            <div class="image1"></div>
+                        </div>
+                        <div class="description-transaction">
+                            <div class="title-transaction">Abode Subcribe</div>
+                            <div class="transaction-date">20 Jan 2023, 06:00</div> 
+                        </div>
+                        <div class="total-transaciton">
+                            <div class="transaction-value transaction-red">-$1,200.00</div>
+                            <div class="transaction-status">Completed</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="logo-transaction">
+                            <div class="logo1"></div>
+                        </div>
+                        <div class="description-transaction">
+                            <div class="title-transaction">Casback Zalora</div>
+                            <div class="transaction-date">20 Jan 2023, 06:00</div> 
+                        </div>
+                        <div class="total-transaciton">
+                            <div class="transaction-value transaction-green">+$800.00</div>
+                            <div class="transaction-status">Completed</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="logo-transaction">
+                            <div class="mac1"></div>
+                        </div>
+                        <div class="description-transaction">
+                            <div class="title-transaction">MCdonald</div>
+                            <div class="transaction-date">20 Jan 2023, 06:00</div> 
+                        </div>
+                        <div class="total-transaciton">
+                            <div class="transaction-value transaction-red">-$300.00</div>
+                            <div class="transaction-status">Completed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="see-more">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-wallet"></i>
+            <i class="fa-solid fa-calendar-days"></i>
+            <i class="fa-regular fa-user"></i>
+         </div> 
+    </footer>
+</body>
+</html>

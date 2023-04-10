@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Financy</title>
+    <link rel="stylesheet" type="text/css" href="style_transactions.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="link" onclick="history.back()">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <h1>Send Money</h1>
+        </nav>
+    </header>
+    <article>
+        <main>
+            <div id="foto"></div>
+            <p>Arrlot Jaedin<br>**** **** 0344</p>
+        </main>
+        <aside>
+            <p>USD</p>
+        </aside>
+    </article>
+    
+    <main id="valor">
+        <div id="bord"><span id="spanValor">$</span><input id="money"></div>
+        <p id="mensg">Your available money is <span>$8,666.60</span></p>
+    </main>
+   
+    <section>
+        <button onclick="adicionarValor(1)">1</button>
+        <button onclick="adicionarValor(2)">2</button>
+        <button onclick="adicionarValor(3)">3</button>
+        <button onclick="adicionarValor(4)">4</button>
+        <button onclick="adicionarValor(5)">5</button>    
+        <button onclick="adicionarValor(6)">6</button>
+        <button onclick="adicionarValor(7)">7</button>
+        <button onclick="adicionarValor(8)">8</button>
+        <button onclick="adicionarValor(9)">9</button>
+        <button onclick="zerar()">00</button>
+        <button onclick="adicionarValor(0)">0</button>
+        <button id="apaga" onclick="apagar()"></button>
+        <button id="sendMoney" onclick="send()" onsubmit="send()" type="submit">Send Money</button>
+    </section>
+     <footer></footer>
+
+     <script>
+        var valor = ["0","0","0","0","0","0"]
+        let cont=5
+    
+        document.getElementById("money").value= "0,000.00"
+        
+        function adicionarValor (entrada){
+            for (let i=0;i<valor.length-1;i++){
+                valor[i]= valor[i+1]
+            }
+    
+            valor[5]= entrada
+            cont=5
+            mostrarValor()
+        }
+    
+        function zerar(){
+            for (let i=0;i<valor.length;i++){
+                valor[i]=0
+            }
+            cont=5
+            mostrarValor()
+        }
+    
+        function apagar(){
+            
+            valor[cont]=0
+            cont--
+            mostrarValor()
+        }
+    
+        
+        function mostrarValor(){
+    
+            document.getElementById("money").value= valor[0]+","
+            for (let i=1;i<4;i++){
+            document.getElementById("money").value+= valor[i];
+            }
+            document.getElementById("money").value+= "."
+            for (let i=4;i<valor.length;i++){
+            document.getElementById("money").value+= valor[i];
+            }
+        }
+    
+        function send(){
+            soma=0
+            for (let i=0;i<valor.length;i++){
+                if(valor[i]==0){
+                    soma++
+                }
+                valor[i]=0
+            }
+    
+            mostrarValor()
+            let mensg = document.getElementById("mensg");
+            
+            if(soma==6){
+                mensg.style.color = "red"
+                mensg.innerHTML= "Falha na trasferencia. Valor não especificado"
+            }
+            else{
+                mensg.style.color = "green"
+                mensg.innerHTML= "Transferencia realizada"
+            }
+    
+            setTimeout(function(){
+                mensg.style.color= "white"
+                mensg.innerHTML= "Your available money is <span>$8,666.60</span>"
+            },1500)
+        }
+    
+        
+    </script>
+</body>
+</html>

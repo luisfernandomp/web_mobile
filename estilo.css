@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    height: 25%;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #151515;
+    width: 100%;
+    height: 12%;
+}
+button{
+    width: 90%;
+    height: 60%;
+    border-radius: 14px;
+    background-color: #fc8b54;
+    color: #FFD8C3;
+}
+button:hover{
+    opacity: 0.8;
+}
+p{
+    color: #F4F1EE;
+}
+.paragrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+    font-size: 11px;
+}
+
+
+
+/* CARROSSEL DE IMAGENS */
+
+section{
+    width: 100%;
+    height: 63%;
+    position: relative;
+    background-color: #151515;
+}
+
+.btn-direita{
+    position: absolute;
+    right: 1%;
+    top: 60%;
+}
+
+.btn-esquerda{
+    position: absolute;
+    left: 1%;
+    top: 60%;
+}
+
+.btns{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(83, 79, 73);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.btns:hover{
+    opacity: 1;
+}
+
+.imagens #img1, #img2, #img3, #img4{
+    position: absolute;
+    transition: opacity 800ms;
+    height: 100%;
+    max-width: 100%;
+}
+
+#img2{
+    opacity: 0;
+}
+
+#img3{
+    opacity: 0;
+}
+
+#img4{
+    opacity: 0;
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+}
+
+.radio-btn{
+    width: 10%;
+    height: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+#radio1, #radio2, #radio3, #radio4{
+    width: 20%;
+    height: 100%;
+    background-color: #F4F1EE;
+    opacity: 0.2;
+    transition: opacity 800ms;
+}
+
+#radio1{
+    opacity: 1;
+}
+
+.desktop{
+    display: none;
+}
+
+@media screen and (min-width:800px) {
+    .imagens #img1, #img2, #img3, #img4{
+        display: none;
+    }
+    .desktop{
+        display: flex;
+        justify-content: center;
+    }
+
+    .desktop #desk1, #desk2, #desk3, #desk4{
+        position: absolute;
+        transition: opacity 800ms;
+        width: 100%;
+        height: 109%;
+    }
+    
+    button{
+        width: 50%;
+    }
+
+    #desk2, #desk3, #desk4{
+        opacity: 0;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+
+    .radio-btn{
+        width: 5%;
+    }
+
+    .paragrafo{
+        margin-top: 2%;
+        flex-direction: row;
+        gap: 4px
+    }
+}
